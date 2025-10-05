@@ -1,0 +1,290 @@
+/* ===== Base & Background ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom, #001f1f, #000000);
+  color: #ffffff;
+  min-height: 100vh;
+  padding: 20px 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ===== Title ===== */
+h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #55d7f0;
+  margin-bottom: 30px;
+}
+
+/* ===== Filter Bar ===== */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+.filter-bar button {
+  background: transparent;
+  border: 1px solid #55d7f0;
+  color: #55d7f0;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-bar button:hover {
+  background: #55d7f0;
+  color: #001f1f;
+}
+
+/* ===== Header & Search ===== */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  gap: 15px;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: #55d7f0;
+  margin-top: 10px;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 250px;
+}
+
+.search-form input[type="text"] {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  color: #000;
+  font-size: 0.95rem;
+  width: 220px;
+}
+
+.search-form button {
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #55d7f0;
+  color: #00312F;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-form button:hover {
+  background-color: #33c0dd;
+}
+
+/* ===== Hospital Sign Up Button ===== */
+.signup-btn {
+  background-color: #55d7f0;
+  color: #001f1f !important;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  flex-shrink: 0;
+}
+
+.signup-btn:hover {
+  background-color: #33c0dd;
+}
+
+/* ===== Hospital Card ===== */
+.hospital-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(0, 49, 47, 0.95);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4);
+  overflow: hidden;
+  margin-bottom: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hospital-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(0,0,0,0.6);
+}
+
+.hospital-img {
+  flex: 1 1 250px;
+  max-height: 200px;
+  overflow: hidden;
+}
+.hospital-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ===== Hospital Content ===== */
+.hospital-content {
+  flex: 2 1 500px;
+  padding: 20px;
+}
+.hospital-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  color: #55d7f0;
+}
+
+/* ===== Tags ===== */
+.hospital-tags {
+  margin-bottom: 10px;
+}
+.hospital-tags .rating {
+  background: #55d7f0;
+  color: #001f1f;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+.hospital-tags .tag {
+  background: #017672;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin-right: 6px;
+  display: inline-block;
+}
+
+/* ===== Info ===== */
+.address,
+.years,
+.open {
+  font-size: 1rem;
+  color: #ccc;
+  margin-bottom: 6px;
+}
+
+/* ===== Buttons ===== */
+.hospital-buttons {
+  margin-top: 16px;
+}
+.hospital-buttons .btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-right: 10px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.hospital-buttons .btn.show {
+  background: #55d7f0;
+  color: #001f1f;
+}
+.hospital-buttons .btn.whatsapp {
+  background: #25d366;
+  color: #ffffff;
+}
+.hospital-buttons .btn.enquiry {
+  background: #017672;
+  color: #ffffff;
+}
+.hospital-buttons .btn:hover {
+  opacity: 0.85;
+}
+
+/* ===== Doctor Section ===== */
+.toggle-btn {
+  margin-top: 14px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #55d7f0;
+  color: #001f1f;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.toggle-btn:hover {
+  background: #33c0dd;
+}
+
+.doctor-section {
+  margin-top: 15px;
+  background: rgba(0, 35, 33, 0.95);
+  padding: 16px;
+  border-radius: 10px;
+  border-left: 4px solid #55d7f0;
+}
+.doctor-card {
+  background: rgba(0, 49, 47, 0.7);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 0.95rem;
+}
+.doctor-card strong {
+  color: #55d7f0;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 768px) {
+  .hospital-card {
+    flex-direction: column;
+  }
+  .hospital-img,
+  .hospital-content {
+    flex: 1 1 100%;
+  }
+  
+  .page-header {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .page-header h1 {
+    text-align: center;
+    margin-bottom: 15px;
+    flex: none;
+  }
+
+  .search-form {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .signup-btn {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+  }
+}
